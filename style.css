@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+}
+
+main {
+  width: 550px;
+  height: 900px;
+  background-image: url(background-color.png);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.kalimba {
+  display: flex;
+}
+
+.marge {
+  width: 41px;
+}
+
+.lames {
+  width: 468px;
+  margin-top: 90px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lame {
+  width: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.lame:hover {
+  background-color: rgb(255, 255, 255, 0.2);
+}
+
+.lame:active {
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+.a001 {
+  height: 172px;
+}
+
+.a017 {
+  height: 172px;
+}
+
+.a002 {
+  height: 200px;
+}
+
+.a016 {
+  height: 200px;
+}
+
+.a003 {
+  height: 229px;
+}
+
+.a015 {
+  height: 229px;
+}
+
+.a004 {
+  height: 257px;
+}
+
+.a014 {
+  height: 257px;
+}
+
+.a005 {
+  height: 286px;
+}
+
+.a013 {
+  height: 286px;
+}
+
+.a006 {
+  height: 314px;
+}
+
+.a012 {
+  height: 314px;
+}
+
+.a007 {
+  height: 343px;
+}
+
+.a011 {
+  height: 343px;
+}
+
+.a008 {
+  height: 371px;
+}
+
+.a010 {
+  height: 371px;
+}
+
+.a009 {
+  height: 400px;
+}
