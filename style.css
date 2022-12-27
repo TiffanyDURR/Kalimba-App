@@ -45,11 +45,11 @@ main {
   display: flex;
 }
 
-.marge {
+.kalimba .marge {
   width: 41px;
 }
 
-.lames {
+.kalimba .lames {
   width: 468px;
   margin-top: 90px;
   border-radius: 10px;
@@ -57,7 +57,7 @@ main {
   justify-content: space-between;
 }
 
-.lame {
+.kalimba .lame {
   width: 20px;
   border-radius: 10px;
   cursor: pointer;
@@ -69,11 +69,11 @@ main {
   padding-bottom: 80px;
 }
 
-.lame:hover {
+.kalimba .lame:hover {
   background-color: rgb(255, 255, 255, 0.2);
 }
 
-.lame:active {
+.kalimba .lame:active {
   background-color: rgb(255, 255, 255, 0.5);
 }
 
@@ -143,4 +143,63 @@ main {
 
 .a009 {
   height: 400px;
+}
+
+.kalimba-mobile-title {
+  display: none;
+}
+
+@media only screen and (min-width: 1px) and (max-width: 1024px) {
+  main {
+    display: none;
+  }
+
+  .kalimba-mobile-title {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    color: #ffffff;
+  }
+
+  .kalimba-mobile {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+  .kalimba-mobile .lame {
+    background-color: #ffffff;
+    width: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1;
+    padding-bottom: 32px;
+    border-radius: 0px 0px 20px 20px;
+    cursor: pointer;
+    background: rgb(72, 74, 74);
+    background: linear-gradient(
+      90deg,
+      rgba(72, 74, 74, 1) 0%,
+      rgba(163, 155, 155, 1) 15%,
+      rgba(222, 207, 207, 1) 50%,
+      rgba(163, 155, 155, 1) 85%,
+      rgba(72, 74, 74, 1) 100%
+    );
+  }
+
+  .kalimba-mobile .lame:active {
+    background: rgb(105, 112, 112);
+    background: linear-gradient(
+      90deg,
+      rgba(105, 112, 112, 1) 0%,
+      rgba(187, 179, 179, 1) 15%,
+      rgba(237, 222, 222, 1) 50%,
+      rgba(187, 179, 179, 1) 85%,
+      rgba(105, 112, 112, 1) 100%
+    );
+  }
 }

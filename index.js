@@ -4,6 +4,12 @@ const goplay = (lame) => {
   audio.play();
 };
 
+const mobileplay = (lame) => {
+  const audio = new Audio();
+  audio.src = lame + ".mp3"; //on attribue une lettre au nom du fichier et on considere que c'est une key
+  audio.play();
+};
+
 document.addEventListener("keypress", (e) => {
   if (e.key === "q") goplay(e.key);
   if (e.key === "a") goplay(e.key);
@@ -23,9 +29,6 @@ document.addEventListener("keypress", (e) => {
   if (e.key === "o") goplay(e.key);
   if (e.key === "p") goplay(e.key);
 });
-
-const lame001 = document.getElementById("lame001");
-const lame002 = document.getElementById("lame002");
 
 document.addEventListener("keypress", (e) => {
   if (e.key === "q") {
